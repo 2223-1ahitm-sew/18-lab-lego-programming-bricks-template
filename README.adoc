@@ -1,0 +1,143 @@
+= Übung Lego-Programmier-Bausteine
+Thomas Stütz
+1.0.0, {docdate}
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+// :toc:
+// :toclevels: 1
+:experimental:
+//https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74?permalink_comment_id=3948218
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+[discrete]
+== Lehrziel
+
+* grundlegende Skills für Programmieren in Java
+
+== Motivation
+
+* Dies ist der Versuch die grundlegenden Skills fürs Programmieren in Form von kleinen Beispielen vorzugeben.
+* Jede dieser kleinen Applikationen deckt eine Funktion ab, die häufig bei komplexeren Programmen verwendet wird.
+* Wenn man diese Beispiele durcharbeitet, sollten die Schüler:innen diese Funktionalitäten wie Lego Bausteine zu einer komplexeren Applikation zusammenfügen können.
+
+== Anleitung
+
+* Erstelle für jedes Beispiel eine Klasse zb die Klasse `Bsp01`. Die main-Methode in dieser Klasse ruft die jeweilige Methode auf. Diese soll einen sprechenden Bezeichner haben:
+
+.Beispielscode
+[%collapsible]
+====
+[source,java]
+----
+public class CharBsp01 {
+
+    public static void main(String[] args) {
+
+        System.out.println(toUpperCase('b'));
+
+    }
+
+    /**
+     * Konvertiere einen Kleinbuchstaben in einen Großbuchstaben: 'a' -> 'A'.
+     * Berechne dies mit dem Asciicode.
+     *
+     * @param c ... Kleinbuchstabe
+     * @return Großbuchstaben
+     */
+    static char toUpperCase(char c) {
+
+        if (c >= 'a' && c <= 'z') {
+            return (char) (c - ('a' - 'A'));
+        }
+        return c;
+
+    }
+
+}
+----
+
+.Bildschirmausgabe
+----
+B
+----
+====
+
+== Lego-Programmier-Bausteine
+
+IMPORTANT: Methoden wie .toUpperCase(), .toLowerCase(), Double.parseDouble(), ... dürfen nicht verwendet werden (da sonst diese Beispiele sinnlos sind).
+
+=== Characters
+* CharBsp01: Konvertiere einen Kleinbuchstaben in einen Großbuchstaben: 'a' -> 'A'. Berechne dies mit dem Asciicode.
+* CharBsp02: Konvertiere einen Großbuchstaben in einen Kleinbuchstaben: 'A' -> 'a'. Berechne dies mit dem Asciicode.
+
+=== Strings
+* StringBsp01: Durchlaufe alle Zeichen eines Strings vorwärts und gib nur die Elemente an einem ungeraden Index aus.
+* StringBsp02: Durchlaufe alle Zeichen eines Strings rückwärts und gib nur die Elemente an einem geraden Index aus.
+* StringBsp03: Durchlaufe einen beliebigen String und stelle fest, ob es nur Ziffern enthält
+* StringBsp04: Durchlaufe einen beliebigen String und stelle fest, ob er nur Kleinbuchstaben enthält.
+* StringBsp05: Durchlaufe einen beliebigen String und stelle fest, ob er nur Großbuchstaben enthält.
+* StringBsp06: Durchlaufe einen beliebigen String und stelle fest, wie viele Kleinbuchstaben enthalten sind.
+* StringBsp07: Durchlaufe einen beliebigen String und stelle fest, wie viele Großbuchstaben enthalten sind.
+* StringBsp08: Durchlaufe einen beliebigen String und stelle fest, wie viele Buchstaben enthalten sind.
+* StringBsp09: Durchlaufe einen beliebigen String und stelle fest, wie viele Vokale enthalten sind.
+* StringBsp10: Durchlaufe einen beliebigen String mit nur EINER Iteration und entferne alle doppelten Bindestriche ('-').
+
+=== Arrays
+* ArrayBsp01: Durchlaufe ein Ganzzahl-Array vorwärts und gib alle Elemente aus
+* ArrayBsp02: Durchlaufe ein Ganzzahl-Array rückwärts und gib alle Elemente aus
+* ArrayBsp03: Durchlaufe ein Ganzzahl-Array und erstelle die Summe der einzelnen Ganzzahl-Elemente
+* ArrayBsp04: Verschiebe alle Zahlen in einem Ganzzahl-Array um ein Element nach vor. Die erste Zahl wird ins letzte Element eingetragen.
+
+=== Umwandlungen
+* ConvertBsp01: Konvertiere den String "123" in eine Ganzzahl.
+* ConvertBsp02: Konvertiere den String "123,45" in eine Dezimalzahl.
+* ConvertBsp03: Konvertiere den String "123.45" in eine Dezimalzahl.
+
+=== Einlesen von der Console
+* ConsoleBsp01: Lies so lange Zeichenketten von der Console ein, bis eine leere Zeichenkette eingelesen wird.
+* ConsoleBsp01: Lies so lange Ganzzahlen von der Console ein, bis eine negative Ganzzahl eingelesen wird. Addiere die positiven Zahlen.
+
+=== Zufallszahlen
+* RandomBsp01: Erstelle eine zufällige Ganzzahl zwischen 0 und 10.
+* RandomBsp02: Erstelle eine zufällige Ganzzahl zwischen 30 und 50.
+
+
+
+
+
+
+
+
+
+
+
+
+////
+.Programmablaufplan
+[xxx%collapsible]
+====
+image::https://www.plantuml.com/plantuml/png/ZPBDZjCm4CVlVefXJwq4PVb0GYsBjeYFtGj2eENkn9DajCuuiiTKubauyWnxufONmoIjoQgYuMZD__VxZpI-3AAznDQg1vtNTQiX1loANgZKzhe2nsf8gFMxDTIuexAHpVZm3aF0ZQ8A5aLBy0gUl5ozM88qoB0G7t6f0DPfz5aBSGqNS7R3WdwlETiej07_uazdu8_Ejzh-YtvsVfhkVnIv-Z5yylrFRQXpWKI7OzdCAjkCmk8zYbYaWkfR95d21wyDN1yfdv__jt8q71IZuFL5CYHg5XivDbGf5NOaPRF8m5AL-ezmUePXa-qQRhe0Z-0B8JIwG8PfPhNPW_a4KpBrIhI47XzE-1oz9pXrXOFlodMTjlhUDbCk3OmESDlVCGj2qTybCx91pZNpzpcKRPCmShql2yG6gWoiu6qoxCYRkPPHcgrNP2jCpZT8S9o2jlyL0l9GQJnndRomIm699-nPFt25rx5iaiHWHKn2to2uoda194Q6hVykoPNCuozGGLodBjCxjlOt[]
+====
+////
+
+
+
+
+
+----
+ __      ___      _    _____                     _
+ \ \    / (_)    | |  / ____|                   | |
+  \ \  / / _  ___| | | (___  _ __   __ _ ___ ___| |
+   \ \/ / | |/ _ \ |  \___ \| '_ \ / _` / __/ __| |
+    \  /  | |  __/ |  ____) | |_) | (_| \__ \__ \_|
+     \/   |_|\___|_| |_____/| .__/ \__,_|___/___(_)
+                            | |
+                            |_|
+----
