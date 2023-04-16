@@ -71,7 +71,7 @@ B
 
 == Lego-Programmier-Bausteine
 
-IMPORTANT: Methoden wie .toUpperCase(), .toLowerCase(), Double.parseDouble(), ... dürfen nicht verwendet werden (da sonst diese Beispiele sinnlos sind).
+IMPORTANT: Methoden wie `.toUpperCase()`, `.toLowerCase()`, `Double.parseDouble()`, ... dürfen nicht verwendet werden (da sonst diese Beispiele sinnlos sind).
 
 === Characters
 * CharBsp01: Konvertiere einen Kleinbuchstaben in einen Großbuchstaben: 'a' -> 'A'. Berechne dies mit dem Asciicode.
