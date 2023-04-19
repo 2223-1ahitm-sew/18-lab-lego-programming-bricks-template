@@ -88,6 +88,7 @@ IMPORTANT: Methoden wie `.toUpperCase()`, `.toLowerCase()`, `Double.parseDouble(
 * StringBsp08: Durchlaufe einen beliebigen String und stelle fest, wie viele Buchstaben enthalten sind.
 * StringBsp09: Durchlaufe einen beliebigen String und stelle fest, wie viele Vokale enthalten sind.
 * StringBsp10: Durchlaufe einen beliebigen String mit nur EINER Iteration und entferne alle doppelten Bindestriche ('-').
+* StringBsp11: Durchlaufe einen beliebigen String mit einer foreach-Schleife. Tipp: Verwende die Methode `.toCharArray()`.
 
 === Arrays
 * ArrayBsp01: Durchlaufe ein Ganzzahl-Array vorwärts und gib alle Elemente aus
@@ -99,6 +100,7 @@ IMPORTANT: Methoden wie `.toUpperCase()`, `.toLowerCase()`, `Double.parseDouble(
 * ConvertBsp01: Konvertiere den String "123" in eine Ganzzahl.
 * ConvertBsp02: Konvertiere den String "123,45" in eine Dezimalzahl.
 * ConvertBsp03: Konvertiere den String "123.45" in eine Dezimalzahl.
+* ConvertBsp04: Konvertiere das Zeichen "3" in eine Ganzzahl.
 
 === Einlesen von der Console
 * ConsoleBsp01: Lies so lange Zeichenketten von der Console ein, bis eine leere Zeichenkette eingelesen wird.
