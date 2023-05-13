@@ -94,7 +94,7 @@ IMPORTANT: Methoden wie `.toUpperCase()`, `.toLowerCase()`, `Double.parseDouble(
 * ArrayBsp01: Durchlaufe ein Ganzzahl-Array vorwärts und gib alle Elemente aus
 * ArrayBsp02: Durchlaufe ein Ganzzahl-Array rückwärts und gib alle Elemente aus
 * ArrayBsp03: Durchlaufe ein Ganzzahl-Array und erstelle die Summe der einzelnen Ganzzahl-Elemente
-* ArrayBsp04: Verschiebe alle Zahlen in einem Ganzzahl-Array um ein Element nach vor. Die erste Zahl wird ins letzte Element eingetragen.
+* ArrayBsp04: Verschiebe alle Zahlen in einem Ganzzahl-Array um ein Element nach vor (nach links). Die erste Zahl wird ins letzte Element eingetragen.
 
 === Umwandlungen
 * ConvertBsp01: Konvertiere den String "123" in eine Ganzzahl.
@@ -110,6 +110,11 @@ IMPORTANT: Methoden wie `.toUpperCase()`, `.toLowerCase()`, `Double.parseDouble(
 * RandomBsp01: Erstelle eine zufällige Ganzzahl zwischen 0 und 10.
 * RandomBsp02: Erstelle eine zufällige Ganzzahl zwischen 30 und 50.
 
+=== Methoden
+* MethodenBsp01: Erstelle eine Methode `square`.
+Übergib dieser Methode 1 Ganzzahl.
+Diese wird in der Methode quadriert und zurückgegeben.
+Gib das Ergebnis in der aufrufenden Methode in der Console aus.
 
 
 
