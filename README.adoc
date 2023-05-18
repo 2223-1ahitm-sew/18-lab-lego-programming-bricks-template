@@ -95,6 +95,137 @@ IMPORTANT: Methoden wie `.toUpperCase()`, `.toLowerCase()`, `Double.parseDouble(
 * ArrayBsp02: Durchlaufe ein Ganzzahl-Array rückwärts und gib alle Elemente aus
 * ArrayBsp03: Durchlaufe ein Ganzzahl-Array und erstelle die Summe der einzelnen Ganzzahl-Elemente
 * ArrayBsp04: Verschiebe alle Zahlen in einem Ganzzahl-Array um ein Element nach vor (nach links). Die erste Zahl wird ins letzte Element eingetragen.
+* ArrayBsp05: Erstelle ein String-Array namens `namen` mit fünf Feldern und befülle es wie folgt (Feld 1 und 4 bleiben leer):
++
+.Array "namen"
+[plantuml,arraybsp05,png]
+----
+@startsalt
+{#
+<b>values</b>|Dagobert|"   "|Daisy|Gundel|"   "
+<b>index</b>|0|1|2|3|4
+}
+@endsalt
+----
++
+.Lösung
+[%collapsible]
+====
+[source,java]
+----
+String[] name = {"Dagobert", "", "Daisy", "Gundel", ""};
+----
+====
+
+* ArrayBsp06: Erstelle ein String-Array namens `kopie`, das so viele Felder hat, dass die nicht-leeren Werte (Namen) des Arrays `namen` Platz haben. Kopiere die Namen aus `namen` in `kopie`.
++
+.Array "kopie"
+[plantuml,arraybsp05,png]
+----
+@startsalt
+{#
+<b>values</b>|Dagobert|Daisy|Gundel
+<b>index</b>|0|1|2
+}
+@endsalt
+----
++
+.Lösung
+[%collapsible]
+====
+[source,java]
+----
+String[] name = {"Dagobert", "", "Daisy", "Gundel", ""};
+System.out.println(Arrays.toString(name));
+
+int anzahlFelder = 0;
+for (int i = 0; i < name.length; i++) {
+    if (name[i].length() > 0) {
+        anzahlFelder++;
+    }
+}
+
+String[] kopie = new String[anzahlFelder];
+int kopieIndex = 0;
+for (int i = 0; i < name.length; i++) {
+    if (name[i].length() > 0) {
+        kopie[kopieIndex++] = name[i];
+    }
+}
+System.out.println(Arrays.toString(kopie));
+
+// Anmerkung: man könnte auch .isEmpty() verwenden
+----
+====
+
+* ArrayBsp07: Erstelle ein zweidimensionales Zeichenketten-Array mit 5x4 Felder. Befülle es wie folgt. Ändere den Eintrag `Nepomuk` auf `Nordpol`.
++
+.Array "funkalphabet"
+[plantuml,arraybsp05,png]
+----
+@startsalt
+{#
+Anton|Berta|Cäsar|Dora|Emil
+Friedrich|Gustav|Heinrich|Ida|Julius
+Konrad|Ludwig|Martha|Nepomuk|Otto
+Paula|Quelle|Richard|Samuel|Theodor
+}
+@endsalt
+----
+
+* ArrayBsp08: Geben Sie vom Array des Beispiels ArrayBsp07 die Länge und die Breite des Arrays aus.
++
+.Lösung
+[%collapsible]
+====
+[source,java]
+----
+String[][] funkalphabet = {
+        {"Anton", "Berta", "Cäsar", "Dora", "Emil"},
+        {"Friedrich", "Gustav", "Heinrich", "Ida", "Julius"},
+        {"Konrad", "Ludwig", "Martha", "Nepomuk", "Otto"},
+        {"Paula", "Quelle", "Richard", "Samuel", "Theodor"}
+};
+
+System.out.printf("Breite des Arrays (x) : %d\n", funkalphabet[0].length);  // 5
+System.out.printf("Länge des Arrays  (y) : %d", funkalphabet.length); // 4
+----
+====
+
+* ArrayBsp09: Erstelle ein zweidimensionales Ganzzahlenarray (5x5) namens `matrix` und befülle es wie folgt:
++
+.Array "matrix"
+[plantuml,arraybsp05,png]
+----
+@startsalt
+{#
+1|2|3|4|5
+1|2|3|4|5
+1|2|3|4|5
+1|2|3|4|5
+1|2|3|4|5
+}
+@endsalt
+----
+
+* ArrayBsp10: Erstelle ein zweidimensionales Ganzzahlenarray (5x5) namens `matrix` und befülle es wie folgt:
++
+.Array "matrix"
+[plantuml,arraybsp05,png]
+----
+@startsalt
+{#
+1|1|1|1|1
+2|2|2|2|2
+3|3|3|3|3
+4|4|4|4|4
+5|5|5|5|5
+}
+@endsalt
+----
+
+
+
 
 === Umwandlungen
 * ConvertBsp01: Konvertiere den String "123" in eine Ganzzahl.
