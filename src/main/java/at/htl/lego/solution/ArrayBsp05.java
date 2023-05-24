@@ -1,4 +1,4 @@
-package at.htl.lego;
+package at.htl.lego.solution;
 
 import java.util.Arrays;
 
