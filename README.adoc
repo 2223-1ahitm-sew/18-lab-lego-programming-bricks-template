@@ -29,6 +29,9 @@ endif::[]
 
 == Anleitung
 
+* Installiere Dir das plantuml-plugin
+* Es sind teilweise die Musterlösungen enthalten. *Versuche zuerst die Beispiele alleine - ohne Musterlösung - zu erarbeiten*. Wenn das nicht gelingt, schau in der Musterlösung nach.
+* Speichere Deine Lösungen in das `student`-Package. Die Musterlösungen werden in das `solution`-package kopiert.
 * Erstelle für jedes Beispiel eine Klasse zb die Klasse `Bsp01`. Die main-Methode in dieser Klasse ruft die jeweilige Methode auf. Diese soll einen sprechenden Bezeichner haben:
 
 .Beispielscode
@@ -68,6 +71,14 @@ public class CharBsp01 {
 B
 ----
 ====
+
+* Updaten der Angaben / der Musterlösungen
+
+[source,shell]
+----
+
+----
+
 
 == Lego-Programmier-Bausteine
 
@@ -120,7 +131,7 @@ String[] name = {"Dagobert", "", "Daisy", "Gundel", ""};
 * ArrayBsp06: Erstelle ein String-Array namens `kopie`, das so viele Felder hat, dass die nicht-leeren Werte (Namen) des Arrays `namen` Platz haben. Kopiere die Namen aus `namen` in `kopie`.
 +
 .Array "kopie"
-[plantuml,arraybsp05,png]
+[plantuml,arraybsp06,png]
 ----
 @startsalt
 {#
@@ -161,7 +172,7 @@ System.out.println(Arrays.toString(kopie));
 * ArrayBsp07: Erstelle ein zweidimensionales Zeichenketten-Array mit 5x4 Felder. Befülle es wie folgt. Ändere den Eintrag `Nepomuk` auf `Nordpol`.
 +
 .Array "funkalphabet"
-[plantuml,arraybsp05,png]
+[plantuml,arraybsp07,png]
 ----
 @startsalt
 {#
@@ -195,7 +206,7 @@ System.out.printf("Länge des Arrays  (y) : %d", funkalphabet.length); // 4
 * ArrayBsp09: Erstelle ein zweidimensionales Ganzzahlenarray (5x5) namens `matrix` und befülle es wie folgt:
 +
 .Array "matrix"
-[plantuml,arraybsp05,png]
+[plantuml,arraybsp09,png]
 ----
 @startsalt
 {#
@@ -211,7 +222,7 @@ System.out.printf("Länge des Arrays  (y) : %d", funkalphabet.length); // 4
 * ArrayBsp10: Erstelle ein zweidimensionales Ganzzahlenarray (5x5) namens `matrix` und befülle es wie folgt:
 +
 .Array "matrix"
-[plantuml,arraybsp05,png]
+[plantuml,arraybsp10,png]
 ----
 @startsalt
 {#
